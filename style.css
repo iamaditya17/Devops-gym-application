@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Edu+QLD+Beginner:wght@500&family=Josefin+Sans:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Square+Peg&family=Yuji+Boku&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(50, 56, 56, 0.6),rgba(43, 48, 49, 0.6)),url(images/backgroung_banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+nav .nav-logo{
+    width: 121px;
+}
+
+nav .nav-lists{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-lists ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 17px;
+    position: relative;
+    left: 50px;
+}
+
+.nav-lists ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px ;
+}
+
+/*----------- navigation bar hover--------------*/
+
+.nav-lists ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    font-weight: 800;
+}
+
+.nav-lists ul li:hover::after{
+    width: 100%;
+}
+
+.nav-button{
+    float: right;
+    margin: auto;
+}
+
+.nav-button a{
+    text-decoration: none;
+}
+
+.btn{
+    color: #fff;
+    border: 1px solid white;
+    padding: 6px 17px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#btn1{
+    margin-right: 18px;
+}
+
+.btn:hover{
+    background-color: aqua;
+    border: 1px solid aqua;
+}
+
+.hero-container{
+  width: 30%; 
+  margin-top: 35px; 
+  margin-left: 30px;
+  margin-bottom: 40px;
+  position: absolute;
+  top: 32%;
+  left: 34%;
+  border: 2px solid white;
+  border-radius: 28px;
+  
+
+}
+
+.hero-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    padding: 12px 75px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 50px ;
+
+}
+
+.form-contents{
+    margin: 20px 76px;
+}
+
+#form-btn{
+    margin-top: 20px;
+    position: relative;
+    left: 65%;
+    margin-bottom: 50px;
+}
+
+.form-contents input{
+    text-align: center;
+    display: block;
+    width: 335px;
+    border: 2px solid white;
+    height: 20px;
+    padding: 3px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
